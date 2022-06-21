@@ -1,14 +1,11 @@
-# this name appears close to the file name in the actions
 name: Test 001
 on:
   - push
 jobs:
-  # each job name will appear as a square in the graph when running
   job_test_1:
+    # The command "runs-on" is actually a action itself
+    # that will run "Set up job" step before yours steps
+    # and will run "Complete job" step after yours steps
     runs-on: ubuntu-latest
     steps:
-      # There will be always a step at start called "Set up job"
-      # It will request a runner (notice that this is an action too)
       - run: echo "understanding yaml is important"
-      # There will be always a step at start called "Complete job"
-      # It will clean memory and space
