@@ -1,4 +1,4 @@
-name: Workflow 007
+name: Workflow 008
 on:
   issues:
     types:
@@ -7,8 +7,8 @@ jobs:
   job_001:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "there is two types of steps"
-      - run: echo "run - the basic step of executing something in terminal"
-      - run: echo "uses - reusing steps made by someone (also know as actions)"
-      - uses: actions/checkout@v3
-      - run: echo "the previous action will `git checkout` to your repository"
+      - run: echo "actions can receive parameters to work with through th key 'with'"
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10.1'
+      - run: python --version
