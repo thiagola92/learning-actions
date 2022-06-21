@@ -1,7 +1,9 @@
+# this name appears close to the file name in the actions
 name: Test 001
 on:
   - push
 jobs:
+  # each job name will appear as a square in the graph when running
   job_test_1:
     runs-on: ubuntu-latest
     steps:
