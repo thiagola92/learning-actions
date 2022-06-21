@@ -8,4 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "your workflow receive some variables with information that you may need"
-      - run: echo "use mustache notation to access {{ runner.os }}"
+      - run: echo "you can get variables in bash using dollar"
+      - run: echo "but github actions wants to avoid collisiong with environment variables"
+      - run: echo "so it uses mustache notation with dollar before"
+      - run: echo "${{ runner.os }}"
+      - run: echo "${{ github.event_name }}"
+      - run: echo "${{ github.ref }}"
+      - run: echo "${{ github.repository }}"
+      - run: echo "${{ github.workspace }}"
+      - run: echo "${{ job.status }}"
