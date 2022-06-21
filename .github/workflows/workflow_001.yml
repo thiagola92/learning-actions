@@ -1,5 +1,6 @@
 # Workflow minimalist, just to get the basic
 name: Workflow 001
+on: push
 jobs:
   job_001:
     runs-on: ubuntu-latest

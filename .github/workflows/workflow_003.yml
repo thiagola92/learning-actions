@@ -1,8 +1,8 @@
 # Events can be a list
 name: Workflow 001
 on:
-  push
-  public
+  - push
+  - public
 jobs:
   job_001:
     runs-on: ubuntu-latest
