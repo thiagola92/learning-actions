@@ -1,0 +1,11 @@
+name: Workflow 004
+on:
+  issues:
+    types:
+      - opened
+      - edited
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ""
