@@ -7,4 +7,8 @@ jobs:
   job_test_1:
     runs-on: ubuntu-latest
     steps:
+      # There will be always a step at start called "Set up job"
+      # It will request a runner (notice that this is an action too)
       - run: echo "understanding yaml is important"
+      # There will be always a step at start called "Complete job"
+      # It will clean memory and space
