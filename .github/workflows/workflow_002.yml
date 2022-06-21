@@ -1,6 +1,4 @@
 name: Workflow 002
-on:
-  - push
 jobs:
   job_001:
     # The command "runs-on" is actually a action itself
@@ -8,6 +6,8 @@ jobs:
     # and will run "Complete job" step after yours steps
     # here is the action: https://github.com/actions/virtual-environments
     runs-on: ubuntu-latest
+
+    # Each step will run after another
     steps:
       - run: echo "understanding yaml is important"
       - run: echo "run command is the more basic command you can have"
