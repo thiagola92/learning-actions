@@ -2,6 +2,8 @@
 Formalizando o conhecimento de actions para ficar mais concreto na cabeça.  
 
 Esse repositório vai ter muito push e commits apenas para ativarem os workflows.  
+É importante entender bem YAML para conseguir processar as diversas maneiras que as actions aceitam entradas.  
 
 # interesting
-The command `runs-on` is actually a action itself that will run "Set up job" before yours steps and will run "Complete job" after yours steps here is the action: https://github.com/actions/virtual-environments  
+O comando `runs-on` na verdade é uma action que execute "Set up job" antes das suas etapas e "Complete job" após as suas etapas.  
+Link para a action: https://github.com/actions/virtual-environments  
