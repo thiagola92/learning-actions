@@ -3,4 +3,5 @@ on:
   - push
 jobs:
   job_001:
-    steps: ""
+    steps:
+      - run: ""
