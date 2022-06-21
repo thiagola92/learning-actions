@@ -1,0 +1,8 @@
+name: Test 001
+on:
+  - push
+jobs:
+  job_test_1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "understanding yaml is important"
