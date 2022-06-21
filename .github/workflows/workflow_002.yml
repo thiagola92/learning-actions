@@ -1,5 +1,5 @@
 # Events can be a list of strings
-name: Workflow 001
+name: Workflow 002
 on:
   - push
   - public
