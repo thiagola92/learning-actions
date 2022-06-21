@@ -1,0 +1,13 @@
+name: Workflow 006
+on:
+  issues:
+    types:
+      - edited
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "notice that each step is a dictionary"
+      - run: echo "this means that there is more keys that can be used in the dictionary"
+      - name: My Run Name
+        run: echo "you can give a name for each step"
