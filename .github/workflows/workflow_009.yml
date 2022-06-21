@@ -1,0 +1,11 @@
+name: Workflow 009
+on:
+  issues:
+    types:
+      - edited
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "your workflow receive some variables with information that you may need"
+      - run: echo "use mustache notation to access {{ runner.os }}"
