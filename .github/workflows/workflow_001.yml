@@ -1,7 +1,7 @@
 name: Workflow 001
-on:
-  - push
+on: []
 jobs:
   job_001:
+    runs-on: ubuntu-latest
     steps:
       - run: ""
