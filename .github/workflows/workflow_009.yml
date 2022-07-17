@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "you can use expressions using dollar + mustache notation"
-      - run: echo "${{ 1 + 1 }}"
+      - run: echo "${{ !true }}"
       - run: echo "your workflow receive some variables with information that you may need"
       - run: echo "${{ runner.os }}"
       - run: echo "${{ github.event_name }}"
