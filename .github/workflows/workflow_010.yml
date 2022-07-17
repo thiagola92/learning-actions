@@ -1,0 +1,14 @@
+name: Workflow 010
+on:
+  issues:
+    types:
+      - edited
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "if you need environment variable (and is not sensitive)"
+      - run: echo "you can pass through env"
+      - run: echo $TESTING
+        env:
+          TESTING: HELLO
