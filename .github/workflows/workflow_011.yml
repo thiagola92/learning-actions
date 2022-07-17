@@ -1,0 +1,15 @@
+name: Workflow 011
+on:
+  issues:
+    types:
+      - edited
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "you can add an IF condition to run something"
+      - run: echo "yes!"
+        if: true
+      - run: echo "no!"
+        if: false
+      - run: echo "bye"
