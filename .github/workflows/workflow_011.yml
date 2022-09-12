@@ -10,4 +10,6 @@ jobs:
         if: true
       - run: echo "no!"
         if: false
+      - run: echo "$ + mustache is optional"
+        if: ${{ true }}
       - run: echo "bye"

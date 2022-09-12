@@ -1,0 +1,12 @@
+name: Workflow 011
+on:
+  workflow_dispatch:
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "github gives you functions to hepl in mustache operations"
+      - run: echo "${{ contains('hello friend', 'hello') }}"
+      - run: echo "${{ contains('hello friend', 'he') }}"
+      - run: echo "${{ contains('hello friend', 'he ') }}"
+      - run: echo "${{ contains('hello friend', ['he ', 'friend']) }}"
