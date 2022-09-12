@@ -1,8 +1,6 @@
 name: Workflow 008
 on:
-  issues:
-    types:
-      - edited
+  workflow_dispatch:
 jobs:
   job_001:
     runs-on: ubuntu-latest
