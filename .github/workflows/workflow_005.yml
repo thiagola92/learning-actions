@@ -1,5 +1,6 @@
 name: Workflow 005
 on:
+  # It's only activated manually on github
   workflow_dispatch:
 jobs:
   job_001:
