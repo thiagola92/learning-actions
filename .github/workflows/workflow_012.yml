@@ -17,6 +17,9 @@ jobs:
       - run: echo "functions to check status are exclusive to if statement"
       - run: echo "everything work with success?"
         if: ${{ success() }}
-      # - run: echo "run this even if canceled? ${{ always() }}"
-      # - run: echo "workflow was cancelled? ${{ cancelled() }}"
-      # - run: echo "did any step before failed? ${{ failure() }}"
+      - run: echo "run this even if canceled?"
+        if: ${{ always() }}
+      - run: echo "workflow was cancelled?"
+        if: ${{ cancelled() }}
+      - run: echo "did any step before failed?"
+        if: ${{ failure() }}
