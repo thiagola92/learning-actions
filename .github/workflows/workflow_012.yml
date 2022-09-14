@@ -14,3 +14,8 @@ jobs:
       - run: echo "${{ contains(fromJSON('[''he'', ''friend'']'), 'hello') }}"
       - run: echo "formatting"
       - run: echo "${{ format('{0} {1}', 'look', 'this') }}"
+      - run: echo "functions to check status"
+      - run: echo "everything work with success? ${{ success() }}"
+      - run: echo "run this even if canceled? ${{ always() }}"
+      - run: echo "workflow was canceled? ${{ cancelled() }}"
+      - run: echo "did any step before failed? ${{ failure() }}"
