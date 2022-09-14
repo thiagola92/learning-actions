@@ -9,5 +9,8 @@ jobs:
       - run: echo "${{ contains('hello friend', 'hello') }}"
       - run: echo "${{ contains('hello friend', 'he') }}"
       - run: echo "${{ contains('hello friend', 'he ') }}"
+      - run: echo "you may need another function to make some objects"
       - run: echo "${{ contains(fromJSON('[''hello'', ''friend'']'), 'hello') }}"
       - run: echo "${{ contains(fromJSON('[''he'', ''friend'']'), 'hello') }}"
+      - run: echo "formatting"
+      - run: echo "${{ format('{0} {1}', 'look', 'this') }}"
