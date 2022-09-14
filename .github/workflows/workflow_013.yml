@@ -7,3 +7,4 @@ jobs:
     steps:
       - run: echo "filters let you create a list from the fields that you specify"
       - run: echo "${{ github.event.issue.labels.*.name }}"
+      - run: echo "interpret as 'all names' or 'give me a list of names'"
