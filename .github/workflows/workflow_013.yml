@@ -1,0 +1,9 @@
+name: Workflow 012
+on:
+  workflow_dispatch:
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "filters let you create a list from the fields that you specify"
+      - run: echo "${{ github.event.issue.labels.*.name }}"
