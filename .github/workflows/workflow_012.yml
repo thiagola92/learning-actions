@@ -9,3 +9,5 @@ jobs:
       - run: echo "${{ contains('hello friend', 'hello') }}"
       - run: echo "${{ contains('hello friend', 'he') }}"
       - run: echo "${{ contains('hello friend', 'he ') }}"
+      - run: echo "${{ contains(['hello', 'friend'], 'hello') }}"
+      - run: echo "${{ contains(['he', 'friend'], 'hello') }}"
