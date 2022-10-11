@@ -1,4 +1,4 @@
-name: Workflow 014
+name: Workflow Git 2
 on:
   workflow_dispatch:
 jobs:
@@ -9,11 +9,8 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: main
-      
-      - run: git status
       - run: echo 'hello' > example.txt
-      - run: git status
-          
+      
       - run: git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - run: git config --global user.name "github-actions"
       - run: git add -A
