@@ -13,6 +13,11 @@ jobs:
       - run: git status
       - run: echo 'hello' > example.txt
       - run: git status
-      - run: git add -A
-      - run: git commit -m "Test"
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          message: Test
+          default_author: github_actions
+          push: false
+
       - run: git push
