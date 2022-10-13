@@ -1,0 +1,18 @@
+name: Workflow Git 02
+on:
+  workflow_dispatch:
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: main
+      - run: echo 'hello2' > example.txt
+      
+      # - run: git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      # - run: git config --global user.name "github-actions"
+      - run: git add -A
+      - run: git commit -m "Test" --author="github-actions<github-actions[bot]@users.noreply.github.com>"
+      - run: git push

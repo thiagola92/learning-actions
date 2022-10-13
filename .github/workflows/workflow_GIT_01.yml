@@ -1,4 +1,4 @@
-name: Workflow Git 1
+name: Workflow Git 01
 on:
   workflow_dispatch:
 jobs:
@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: main
-      - run: echo 'hello' > example.txt
+      - run: echo 'hello1' > example.txt
 
       - uses: EndBug/add-and-commit@v9
         with:
