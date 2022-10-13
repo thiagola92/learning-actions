@@ -11,8 +11,8 @@ jobs:
           ref: main
       - run: echo 'hello2' > example.txt
       
-      # - run: git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      # - run: git config --global user.name "github-actions"
+      - run: git config user.email "github-actions[bot]@users.noreply.github.com"
+      - run: git config user.name "github-actions"
       - run: git add -A
-      - run: git commit -m "Test" --author="github-actions<github-actions[bot]@users.noreply.github.com>"
+      - run: git commit -m "Test"
       - run: git push
