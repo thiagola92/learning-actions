@@ -1,0 +1,9 @@
+name: Workflow trufflehog
+on:
+  workflow_dispatch:
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scan for secrets
+        uses: trufflesecurity/trufflehog@main
