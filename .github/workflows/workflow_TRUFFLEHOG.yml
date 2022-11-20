@@ -5,10 +5,12 @@ jobs:
   job_001:
     runs-on: ubuntu-latest
     steps:
+      - run: echo .
+      - run: echo ./
       - name: Scan for secrets
         uses: trufflesecurity/trufflehog@main
         with:
-          path: ${{ github.repository }}
+          path: ./
           base: ${{ github.event.repository.default_branch }}
           head: HEAD
           extra_args: --debug --only-verified
