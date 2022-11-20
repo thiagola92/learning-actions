@@ -5,8 +5,8 @@ jobs:
   job_001:
     runs-on: ubuntu-latest
     steps:
-      - run: echo .
-      - run: echo ./
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: Scan for secrets
         uses: trufflesecurity/trufflehog@main
         with:
