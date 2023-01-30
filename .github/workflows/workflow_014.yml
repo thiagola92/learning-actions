@@ -7,4 +7,4 @@ jobs:
     outputs:
       out1: ~/example
     steps:
-      - run: echo "hello" >> $GITHUB_OUTPUT
+      - run: echo "hello=world" >> $GITHUB_OUTPUT
