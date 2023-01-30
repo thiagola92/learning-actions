@@ -5,7 +5,9 @@ jobs:
   job_001:
     runs-on: ubuntu-latest
     outputs:
-      out1: ~/example
+      out1: ${{ steps.step1.outputs.hello}}
     steps:
-      - run: echo "hello=world" >> $GITHUB_OUTPUT
-      - run: cat $GITHUB_OUTPUT | echo
+      - id: step1
+        run: echo "hello=world" >> $GITHUB_OUTPUT
+      - id: step2
+        run: echo ${{ step.step1.outputs.out1 }}
