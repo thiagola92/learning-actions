@@ -10,4 +10,4 @@ jobs:
       - id: step1
         run: echo "hello=world" >> $GITHUB_OUTPUT
       - id: step2
-        run: echo ${{ outputs.out1 }}
+        run: echo ${{ jobs.job_001.outputs.out1 }}
