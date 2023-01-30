@@ -8,3 +8,4 @@ jobs:
       out1: ~/example
     steps:
       - run: echo "hello=world" >> $GITHUB_OUTPUT
+      - run: cat $GITHUB_OUTPUT
