@@ -1,0 +1,10 @@
+name: Workflow 014
+on:
+  workflow_dispatch:
+jobs:
+  job_001:
+    runs-on: ubuntu-latest
+    outputs:
+      out1: ~/example
+    steps:
+      - run: echo "hello" >> $GITHUB_OUTPUT
